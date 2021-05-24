@@ -1,0 +1,17 @@
+# 端口
+server:
+  port: 8080
+
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/file?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+# mapper配置文件
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true
